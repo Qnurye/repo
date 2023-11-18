@@ -1,0 +1,15 @@
+maintainers:
+  - github: SilverRainZ
+    email: Shengyu Zhang <la@archlinuxcn.org>
+  - github: Qnurye
+    email: Wenjie Luo <qnurye@gmail.com>
+
+build_prefix: extra-x86_64
+
+pre_build_script: aur_pre_build(maintainers=['SilverRainZ', 'Qnurye'])
+
+post_build: aur_post_build
+
+update_on:
+  - source: aur
+    aur: dida365
